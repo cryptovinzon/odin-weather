@@ -66,7 +66,6 @@ document.getElementById('submit').addEventListener('click', function(e) {
 const submitForm = async(city) => {
     const coordinates = await getCoordinates(city);
     const data = await getWeather(coordinates);
-    console.log(data);
     const weatherReport = filterData(data);
     displayReport(weatherReport);
 }
