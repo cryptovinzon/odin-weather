@@ -1,0 +1,60 @@
+html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+}
+
+body {
+    display: grid;   
+    row-gap: 18px; 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/783/676/1009/japan-street-japan-digital-art-lofi-cafe-hd-wallpaper-f94088cd618a2d2ba62768dff08166dd.jpg?);    
+    background-position: center;    
+    background-size: cover;
+    width: 100%;
+}
+
+.form-container {    
+    grid-row: 1;
+    grid-column: 1/2;
+}
+
+.weather {
+    grid-row: 2;
+}
+
+.form-container, .weather {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#city {
+    font-size: 24px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 6px solid black;    
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
+}
+
+button {
+    height: 36px;    
+    font-size: 24px;
+    border-radius: 16px;
+    border: none;
+}
+
